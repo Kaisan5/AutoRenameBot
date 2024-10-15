@@ -7,22 +7,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "23374527")
-    API_HASH  = os.environ.get("API_HASH", "5a48ec466dfa7df47e2a109ed40019bc")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6920446391:AAGfcYMOs4fLZsvozVqshaTfLbuLv6D7ZAE") 
-   
+    API_ID    = os.environ.get("API_ID", "21857983")
+    API_HASH  = os.environ.get("API_HASH", "e469e84c943ce3b8b056eb6a296f2c67")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7508789523:AAE_0EYz7_E_FkI-hyXbtSnN5Axekmz-CqY") 
+
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://dlxsmith:8876790388@cluster0.jfy5pyy.mongodb.net/?retryWrites=true&w=majority")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://dhimanrajat:Y8IAGI0lVrMhjvkU@cluster0.mytkgu6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/e4193aff84f7bf715c04c.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1951547289 1747003935 6446763201 5173665421 1785499774').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    PORT = os.environ.get("PORT", "8080")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002068600193"))
-    FILES_CHANNEL = int(os.environ.get("FILES_CHANNEL", "-1002211546440"))
+    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/nxK.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '833465134').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "aboutRizzx") 
+    PORT = os.environ.get("PORT", "6060")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002497860595"))
+    FILES_CHANNEL = int(os.environ.get("FILES_CHANNEL", "-1002288444644"))
     USER_REPLY_TEXT = "Your Are Not Authorised To use me Contact @ItzMonkeyDLuffy to use me "
 
     
@@ -33,12 +33,12 @@ class Config(object):
 class Txt(object):
     # part of text configuration
         
-    START_TXT = """<b>Hɪ {} 👋,
+    START_TXT = """<blockquote expandable><b>Hɪ {} 👋,
 Tʜɪs Is Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Rᴇɴᴀᴍᴇ Bᴏᴛ
 Usɪɴɢ Tʜɪs Bᴏᴛ Yᴏᴜ Cᴀɴ Rᴇɴᴀᴍᴇ & Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟ Oꜰ Yᴏᴜʀ Fɪʟᴇ
 Yᴏᴜ Cᴀɴ Aʟsᴏ Cᴏɴᴠᴇʀᴛ Vɪᴅᴇᴏ Tᴏ Fɪʟᴇ & Fɪʟᴇ Tᴏ Vɪᴅᴇᴏ
 Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ Aɴᴅ Cᴜsᴛᴏᴍ Cᴀᴘᴛɪᴏɴ
-Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : MonKey D.Luffy ⚡</b>"""
+Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : MonKey D.Luffy ⚡</b></blockquote>"""
     
     FILE_NAME_TXT = """
     <u><b>SETUP AUTO RENAME FORMAT</b></u>\n\nUse These Keywords To Setup Custom File Name\n\n➝ episode :- to replace episode number\n➝ quality :- to replace video resolution\n\n‣ <b>Example :</b> /autorename  One Piece - EPepisode [quality] [Sub] @AnimeStation2.mkv\n\n‣ <b>Your Current Rename Format :</b> {format_template}
