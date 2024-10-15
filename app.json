@@ -1,0 +1,64 @@
+{
+    "name": "Renamer Bot",
+    "description": "Telegram File Renamer Bot",
+    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
+    "keywords": ["Renamer Bot", "Mongo DB"],
+    "repository": "https://github.com/itzmadara/Autorename",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": "26334773"
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": "3bc4c3c2416c746fb9d613e205e8a320"
+        },
+        "WEBHOOK": {
+            "description": "If your server needs a web service! value = True else value = False",
+            "value": "False"
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel username without [@]",
+            "value": "Animestation2",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "6920446391:AAGfcYMOs4fLZsvozVqshaTfLbuLv6D7ZAE"
+        },
+        "ADMIN": {
+            "description": "Add Your User ID multiple is use space to split",
+            "value": "1645068158 5834246549",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "value": -1001994022131,
+            "required": true
+        },
+        "DB_URL": {
+            "description": "Your MongoDB URL Obtained From mongodb.com",
+            "value": "mongodb+srv://madarabhaiya:Vikash3108@cluster0.9xniylv.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "DB_NAME": {
+            "description": "Your MongoDB Database Name",
+            "value": "madarabhaiya",
+            "required": true
+        },
+        "FILES_CHANNEL": {
+            "description": "Add Your Dump Channel",
+            "value": "-1002107245261",
+            "required": true
+        },
+        "START_PIC": {
+            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "value": "https://graph.org/file/2c70b447221f4a53ffe59.jpg",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
