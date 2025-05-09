@@ -42,4 +42,17 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-Bot().run()
+#Bot().run()
+from pyrogram import Client
+
+class Bot(Client):
+    def __init__(self):
+        super().__init__("bot", api_id=..., api_hash=..., bot_token=...)
+
+    async def start(self):
+        await super().start()
+        print("Bot started")
+
+    async def stop(self, *args):
+        await super().stop()
+        print("Bot stopped")
