@@ -19,10 +19,10 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://envs.sh/nxK.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '833465134').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "aboutRizzx") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     PORT = os.environ.get("PORT", "6060")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002497860595"))
-    FILES_CHANNEL = int(os.environ.get("FILES_CHANNEL", "-1002288444644"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FILES_CHANNEL = int(os.environ.get("FILES_CHANNEL", ""))
     USER_REPLY_TEXT = "Your Are Not Authorised To use me Contact @ItzMonkeyDLuffy to use me "
 
     
